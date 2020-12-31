@@ -86,12 +86,11 @@ var putImg = (prefix, path) => {
    
     data = JSON.parse(data);
     var url = 'https://cn.bing.com' + data.images[0].url;
-    
     let opts = {
       url: url,
     };
     var date = new Date();
-    let path = "/tmp/bingImgUpdate/img_" + date.format('yyyy-MM-dd') + "_1920x1080_96_background_normal.jpg";
+    let path = "/tmp/img_" + date.format('yyyy-MM-dd') + "_1920x1080_96_background_normal.jpg";
     let prefix = "wallpaper/img_" + date.format('yyyy-MM-dd') + "_1920x1080_96_background_normal.jpg";
     let r1 = Ut.downImg(opts, path);
     console.log(r1);
