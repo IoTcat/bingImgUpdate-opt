@@ -77,7 +77,7 @@ var putImg = (prefix, path) => {
 }
 
 
-
+setInterval(()=>{
 
 (async () => {
   try {
@@ -106,4 +106,4 @@ var putImg = (prefix, path) => {
   }
 })()
 
-
+}, 1000*60*60*6);
